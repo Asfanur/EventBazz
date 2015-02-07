@@ -26,6 +26,8 @@
 		C62F39621A85C11A00C2EBB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62F39611A85C11A00C2EBB6 /* Images.xcassets */; };
 		C62F39651A85C11A00C2EBB6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62F39631A85C11A00C2EBB6 /* LaunchScreen.xib */; };
 		C62F39711A85C11A00C2EBB6 /* EventBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62F39701A85C11A00C2EBB6 /* EventBuzzTests.m */; };
+		C655D84B1A85E97000A5A2E5 /* RegisterCharityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C655D84A1A85E97000A5A2E5 /* RegisterCharityViewController.m */; };
+		C655D8521A86024C00A5A2E5 /* RegisterDonerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C655D8511A86024C00A5A2E5 /* RegisterDonerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		C62F396A1A85C11A00C2EBB6 /* EventBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62F396F1A85C11A00C2EBB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C62F39701A85C11A00C2EBB6 /* EventBuzzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventBuzzTests.m; sourceTree = "<group>"; };
+		C655D8491A85E97000A5A2E5 /* RegisterCharityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterCharityViewController.h; path = Controller/RegisterCharityViewController.h; sourceTree = "<group>"; };
+		C655D84A1A85E97000A5A2E5 /* RegisterCharityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterCharityViewController.m; path = Controller/RegisterCharityViewController.m; sourceTree = "<group>"; };
+		C655D8501A86024C00A5A2E5 /* RegisterDonerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterDonerViewController.h; path = Controller/RegisterDonerViewController.h; sourceTree = "<group>"; };
+		C655D8511A86024C00A5A2E5 /* RegisterDonerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterDonerViewController.m; path = Controller/RegisterDonerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +177,8 @@
 			children = (
 				3A747A231A85DCF2000BBA2F /* QR */,
 				C62F39581A85C11A00C2EBB6 /* AppDelegate.h */,
+				C655D84C1A85E97800A5A2E5 /* Controller */,
 				C62F39591A85C11A00C2EBB6 /* AppDelegate.m */,
-				C62F395B1A85C11A00C2EBB6 /* ViewController.h */,
-				C62F395C1A85C11A00C2EBB6 /* ViewController.m */,
 				3AB7F3401A85CFC00051CF8F /* NetworkManager.h */,
 				3AB7F3411A85CFC00051CF8F /* NetworkManager.m */,
 				3AB7F3431A85CFE00051CF8F /* LocalNetworkManager.h */,
@@ -212,6 +217,19 @@
 				C62F396F1A85C11A00C2EBB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C655D84C1A85E97800A5A2E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C655D8501A86024C00A5A2E5 /* RegisterDonerViewController.h */,
+				C655D8511A86024C00A5A2E5 /* RegisterDonerViewController.m */,
+				C62F395B1A85C11A00C2EBB6 /* ViewController.h */,
+				C62F395C1A85C11A00C2EBB6 /* ViewController.m */,
+				C655D8491A85E97000A5A2E5 /* RegisterCharityViewController.h */,
+				C655D84A1A85E97000A5A2E5 /* RegisterCharityViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,8 +371,10 @@
 				3AB7F3451A85CFE00051CF8F /* LocalNetworkManager.m in Sources */,
 				3A747A351A85DCF2000BBA2F /* bitstream.c in Sources */,
 				3AB7F3421A85CFC00051CF8F /* NetworkManager.m in Sources */,
+				C655D8521A86024C00A5A2E5 /* RegisterDonerViewController.m in Sources */,
 				3A747A3A1A85DCF2000BBA2F /* rscode.c in Sources */,
 				3A747A3C1A85DCF2000BBA2F /* UIImage+MDQRCode.m in Sources */,
+				C655D84B1A85E97000A5A2E5 /* RegisterCharityViewController.m in Sources */,
 				3A747A391A85DCF2000BBA2F /* qrspec.c in Sources */,
 				C62F395D1A85C11A00C2EBB6 /* ViewController.m in Sources */,
 				3A747A371A85DCF2000BBA2F /* qrencode.c in Sources */,
@@ -438,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventBuzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -499,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventBuzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
