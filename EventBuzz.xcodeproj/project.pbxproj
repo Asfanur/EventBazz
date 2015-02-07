@@ -14,6 +14,7 @@
 		C62F39621A85C11A00C2EBB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62F39611A85C11A00C2EBB6 /* Images.xcassets */; };
 		C62F39651A85C11A00C2EBB6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62F39631A85C11A00C2EBB6 /* LaunchScreen.xib */; };
 		C62F39711A85C11A00C2EBB6 /* EventBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62F39701A85C11A00C2EBB6 /* EventBuzzTests.m */; };
+		C62F397D1A85C90200C2EBB6 /* Charity.m in Sources */ = {isa = PBXBuildFile; fileRef = C62F397C1A85C90200C2EBB6 /* Charity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C62F396A1A85C11A00C2EBB6 /* EventBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62F396F1A85C11A00C2EBB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C62F39701A85C11A00C2EBB6 /* EventBuzzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventBuzzTests.m; sourceTree = "<group>"; };
+		C62F397B1A85C90200C2EBB6 /* Charity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Charity.h; sourceTree = "<group>"; };
+		C62F397C1A85C90200C2EBB6 /* Charity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Charity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		C62F39531A85C11A00C2EBB6 /* EventBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				C62F397A1A85C90200C2EBB6 /* Model */,
 				C62F39581A85C11A00C2EBB6 /* AppDelegate.h */,
 				C62F39591A85C11A00C2EBB6 /* AppDelegate.m */,
 				C62F395B1A85C11A00C2EBB6 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				C62F396F1A85C11A00C2EBB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C62F397A1A85C90200C2EBB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C62F397B1A85C90200C2EBB6 /* Charity.h */,
+				C62F397C1A85C90200C2EBB6 /* Charity.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62F397D1A85C90200C2EBB6 /* Charity.m in Sources */,
 				C62F395D1A85C11A00C2EBB6 /* ViewController.m in Sources */,
 				C62F395A1A85C11A00C2EBB6 /* AppDelegate.m in Sources */,
 				C62F39571A85C11A00C2EBB6 /* main.m in Sources */,
@@ -414,6 +428,7 @@
 				C62F39761A85C11A00C2EBB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C62F39771A85C11A00C2EBB6 /* Build configuration list for PBXNativeTarget "EventBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				C62F39791A85C11A00C2EBB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
